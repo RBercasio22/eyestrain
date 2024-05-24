@@ -9,12 +9,15 @@ GPIO.setwarnings(False)
 GPIO.setup(23, GPIO.OUT)
 GPIO.setup(24, GPIO.OUT)
 
+
+# firebase Configuration for web application to mobile app
 config = {
-    "apiKey": "AIzaSyCWl5-CwN2NYh_RZm1-P1O0l99Ete2pJe0",
-    "authDomain": "eyeblinker-status.firebaseapp.com",
-    "databaseURL": "https://eyeblinker-status-default-rtdb.firebaseio.com",
-    "storageBucket": "eyeblinker-status.appspot.com",
+    "apiKey": "AIzaSyCWl5-CwN2NYh_RZm1-P1O0l99Ete26Je0",
+    "authDomain": "example.com",
+    "databaseURL": "https://example.com",
+    "storageBucket": "example.com",
 }
+
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
